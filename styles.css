@@ -1,0 +1,142 @@
+body {
+  font-family: "RocknRoll One", sans-serif;
+  background-color: #ff914d;
+}
+
+section {
+  background-color: #ff914d;
+}
+/* Score Counter*/
+.score-counter {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 1fr;
+  margin: 10px;
+}
+.score {
+  background-color: #ff914d;
+}
+.score > h3 {
+  margin-left: 0;
+  margin-right: auto;
+  width: 75px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+.score > h3 > span {
+  font-size: 48px;
+}
+.counter {
+  text-align: right;
+}
+.counter > h3 {
+  margin-left: auto;
+  margin-right: 0;
+  width: 75px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+.counter > h3 > span {
+  font-size: 48px;
+}
+/* Title*/
+
+.title {
+  font-family: "Bebas Neue";
+  font-size: 62px;
+  color: white;
+  display: grid;
+  grid-template-columns: 2fr;
+  background-color: black;
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  padding: 20px;
+}
+/* Quote*/
+.quote {
+  font-size: 24px;
+  color: #ff914d;
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: white;
+  text-align: center;
+  margin: 20px;
+  padding: 50px;
+}
+/* Contestant*/
+.contestant {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.ron,
+.kanye,
+.trump {
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 4px solid black;
+}
+.rounded-circle {
+  width: auto;
+  height: 100%;
+  margin-left: -40px;
+}
+.ron:hover,
+.kanye:hover,
+.trump:hover {
+  border: 4px solid #808080;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 3px 3px 5px 6px #ccc; /* Firefox 3.5 - 3.6 */
+  box-shadow: 3px 3px 5px 6px #ccc;
+}
+.ron img {
+  margin-left: -80px;
+}
+.names {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+}
+
+h3 {
+  border: 2px solid black;
+}
+
+.correct {
+  border: 4px solid #00ff00;
+  -webkit-box-shadow: 3px 3px 5px 6px #00ff00; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 3px 3px 5px 6px #00ff00; /* Firefox 3.5 - 3.6 */
+  box-shadow: 3px 3px 5px 6px #00ff00;
+}
+.correct:hover {
+  border: 4px solid #00ff00;
+  -webkit-box-shadow: 3px 3px 5px 6px #00ff00; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 3px 3px 5px 6px #00ff00; /* Firefox 3.5 - 3.6 */
+  box-shadow: 3px 3px 5px 6px #00ff00;
+}
+
+.wrong {
+  border: 4px solid #ff0000;
+  -webkit-box-shadow: 3px 3px 5px 6px #ff0000; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 3px 3px 5px 6px #ff0000; /* Firefox 3.5 - 3.6 */
+  box-shadow: 3px 3px 5px 6px #ff0000;
+}
+.wrong:hover {
+  border: 4px solid #ff0000;
+  -webkit-box-shadow: 3px 3px 5px 6px #ff0000; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 3px 3px 5px 6px #ff0000; /* Firefox 3.5 - 3.6 */
+  box-shadow: 3px 3px 5px 6px #ff0000;
+}
