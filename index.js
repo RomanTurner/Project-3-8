@@ -8,6 +8,11 @@ let scoreCounter = 0;
 getQuote();
 
 
+<<<<<<< Updated upstream
+=======
+
+
+>>>>>>> Stashed changes
 function getQuote() {
   //GENERATE A RANDOM NUMBER FROM 1 TO 3
   //(RON=0), (KANYE=1), (TRUMP=2)
