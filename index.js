@@ -4,7 +4,7 @@ let trumpUrl = "https://api.whatdoestrumpthink.com/api/v1/quotes/random/";
 let urlArray = [ronUrl, kanyeUrl, trumpUrl];
 let currentQuote = 0;
 let scoreCounter = 0;
-
+//Hey YO!
 getQuote();
 
 function getQuote() {
