@@ -3,7 +3,6 @@ let kanyeUrl = ('https://api.kanye.rest/');
 let trumpUrl = ('https://api.whatdoestrumpthink.com/api/v1/quotes/random/');
 let urlArray = [ronUrl, kanyeUrl, trumpUrl];
 
-
 function getQuote(){
   //GENERATE A RANDOM NUMBER FROM 1 TO 3
   //(RON=0), (KANYE=1), (TRUMP=2)
