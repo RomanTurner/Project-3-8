@@ -1,3 +1,4 @@
+
 let ronUrl = ('https://ron-swanson-quotes.herokuapp.com/v2/quotes');
 let kanyeUrl = ('https://api.kanye.rest/');
 let trumpUrl = ('https://api.whatdoestrumpthink.com/api/v1/quotes/random/');
@@ -24,3 +25,4 @@ function getQuote(){
     })
 }
 getQuote();
+
