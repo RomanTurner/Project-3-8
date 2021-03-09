@@ -1,28 +1,26 @@
-//todo CALL()
+let ronUrl = ('https://ron-swanson-quotes.herokuapp.com/v2/quotes');
+let kanyeUrl = ('https://api.kanye.rest/');
+let trumpUrl = ('https://api.whatdoestrumpthink.com/api/v1/quotes/random/');
+let urlArray = [ronUrl, kanyeUrl, trumpUrl];
 
-let obj = { num: 2 };
-let obj2 = { num: 5 };
 
-const addToThis = function (a, b, c) {
-  return this.num + a + b + c;
-};
-//* this is the object that is passed as the argument
-
-console.log(addToThis.call(obj, 1, 2, 3));
-console.log(addToThis.call(obj2, 1, 2, 3));
-//*functionName.call(Obj, functionParameters);
-
-//todo APPLY()
-//*functionName.call(Obj, parameterArray);
-let arr = [1, 2, 3];
-
-console.log(addToThis.apply(obj, arr));
-
-//todo BIND()
-//*functionName.call(Obj, parameterArray);
-let bindExample = addToThis.bind(obj);
-//binds the object parameter, now you can just pass different arguments.
-console.dir(bindExample);
-
-console.log(bindExample(1, 2, 3));
-
+function getQuote(){
+  //GENERATE A RANDOM NUMBER FROM 1 TO 3
+  //(RON=0), (KANYE=1), (TRUMP=2)
+  let i = Math.floor(Math.random()*3)
+  //FETCHES QUOTE BASED OFF URL ARRAY INDEX
+  fetch(urlArray[i])
+    .then(response => response.json())
+    .then(data => {
+      if (i = 0){
+      console.log(data)
+      }
+      if (i = 1){
+      console.log(data)
+      }
+      else {
+      console.log(data.message)
+      }
+    })
+}
+getQuote();
