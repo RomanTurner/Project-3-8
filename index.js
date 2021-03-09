@@ -8,7 +8,7 @@ getQuote();
 
 
 function getQuote(){
-  //GENERATE A RANDOM NUMBER FROM 1 TO 3
+  //GENERATE A RANDOM NUMBER FROM 0 TO 2
   //(RON=0), (KANYE=1), (TRUMP=2)
   let i = Math.floor(Math.random()*3)
   //FETCHES QUOTE BASED OFF URL ARRAY INDEX
@@ -35,6 +35,8 @@ function renderQuote(data, i){
   }
 }
   
+
+
  
 
 
