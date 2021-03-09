@@ -24,7 +24,24 @@ function getQuote() {
       }
     });
 }
-getQuote();
+
+function renderQuote(data, i) {
+  console.log(i);
+  let newQuote = document.querySelector(".quote");
+  switch (i) {
+    case 0:
+      newQuote.textContent = `"${data}"`;
+      break;
+    case 1:
+      newQuote.textContent = `"${data.quote}"`;
+      break;
+    case 2:
+      newQuote.textContent = `"${data.message}"`;
+      break;
+    default:
+      newQuote.textContent = "Press Start to Play";
+  }
+}
 
 //grab div,
 const ron = document.querySelector(".ron");
