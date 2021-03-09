@@ -4,6 +4,8 @@ let kanyeUrl = ('https://api.kanye.rest/');
 let trumpUrl = ('https://api.whatdoestrumpthink.com/api/v1/quotes/random/');
 let urlArray = [ronUrl, kanyeUrl, trumpUrl];
 
+getQuote();
+
 
 function getQuote(){
   //GENERATE A RANDOM NUMBER FROM 1 TO 3
@@ -12,17 +14,27 @@ function getQuote(){
   //FETCHES QUOTE BASED OFF URL ARRAY INDEX
   fetch(urlArray[i])
     .then(response => response.json())
-    .then(data => {
-      if (i = 0){
-      console.log(data)
-      }
-      if (i = 1){
-      console.log(data)
-      }
-      else {
-      console.log(data.message)
-      }
-    })
+    .then(data => renderQuote(data, i))
 }
-getQuote();
+
+function renderQuote(data, i){
+  console.log(i)
+  let newQuote = document.querySelector(".quote");
+  switch(i){
+    case 0:
+      newQuote.textContent = `"${data}"`;
+      break;
+    case 1:
+      newQuote.textContent = `"${data.quote}"`;
+      break;
+    case 2: 
+      newQuote.textContent = `"${data.message}"`;
+      break;
+    default:
+      newQuote.textContent = "Press Start to Play"
+  }
+}
+  
+ 
+
 
