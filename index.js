@@ -7,6 +7,7 @@ let scoreCounter = 0;
 //Hey YO!
 getQuote();
 
+
 function getQuote() {
   //GENERATE A RANDOM NUMBER FROM 1 TO 3
   //(RON=0), (KANYE=1), (TRUMP=2)
