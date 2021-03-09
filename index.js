@@ -3,6 +3,9 @@ let kanyeUrl = "https://api.kanye.rest/";
 let trumpUrl = "https://api.whatdoestrumpthink.com/api/v1/quotes/random/";
 let urlArray = [ronUrl, kanyeUrl, trumpUrl];
 let currentQuote = 0;
+let scoreCounter = 0;
+//Hey YO!
+getQuote();
 
 function getQuote() {
   //GENERATE A RANDOM NUMBER FROM 1 TO 3
@@ -12,16 +15,8 @@ function getQuote() {
   fetch(urlArray[i])
     .then((response) => response.json())
     .then((data) => {
-      console.log(i);
       currentQuote = i;
-      if ((i = 0)) {
-        console.log(data);
-      }
-      if ((i = 1)) {
-        console.log(data);
-      } else {
-        console.log(data.message);
-      }
+      renderQuote(data, i);
     });
 }
 
@@ -47,15 +42,21 @@ function renderQuote(data, i) {
 const ron = document.querySelector(".ron");
 const kanye = document.querySelector(".kanye");
 const trump = document.querySelector(".trump");
+const score = document.querySelector(".score>h3>span");
 
+let contestantArr = [ron, kanye, trump];
 ron.addEventListener("click", (e) => answer(e));
 kanye.addEventListener("click", (e) => answer(e));
 trump.addEventListener("click", (e) => answer(e));
 
+function incrementScore() {
+  scoreCounter++;
+  score.textContent = scoreCounter;
+}
+
 function answer(e) {
   let y = e.path[1];
   let x = parseInt(e.path[1].dataset.num);
-  console.log(typeof x, x);
   if (x === currentQuote) {
     correct(y);
   } else {
@@ -65,8 +66,23 @@ function answer(e) {
 
 function correct(y) {
   y.classList.add("correct");
+  incrementScore();
+  const nextQ = setInterval(() => nextQuestion(nextQ), 2000);
 }
 
 function wrong(y) {
   y.classList.add("wrong");
+  alert("You Lost, boo-hoo");
+  const nextQ = setInterval(() => nextQuestion(nextQ), 2000);
+  scoreCounter = -1;
+  incrementScore();
+}
+
+function nextQuestion(nextQ) {
+  contestantArr.forEach((contestant) => {
+    contestant.classList.remove("wrong");
+    contestant.classList.remove("correct");
+  });
+  getQuote();
+  clearInterval(nextQ);
 }
