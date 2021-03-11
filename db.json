@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "Sebastian",
+      "pin": "1333",
+      "highScore": 25
+    },
+    {
+      "id": 2,
+      "username": "Steve",
+      "pin": "1324",
+      "highScore": 32
+    },
+    {
+      "id": 3,
+      "username": "Ann",
+      "pin": "1235",
+      "highScore": 13
+    },
+    {
+      "username": "Ronald Regan",
+      "pin": "1222",
+      "id": 4,
+      "highScore": 0
+    },
+    {
+      "username": "Aven Hoose",
+      "pin": "1222",
+      "highScore": 57,
+      "id": 5
+    }
+  ]
+}

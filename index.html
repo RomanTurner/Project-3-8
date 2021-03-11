@@ -59,7 +59,7 @@
 
       <!--Quote Container-->
       <section class="main-box">
-  <p class="quote"></p>
+        <p class="quote"></p>
       </section>
       <!--End Quote Container-->
       <section class="contestant">
@@ -97,6 +97,36 @@
       </div>
       <!--Contestant Container-->
       <!--End Contestant Container-->
+      <section>
+        <form action="" class="form">
+          <div>
+            <label for="name">Enter Username</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              title="invalid input"
+              placeholder="enter username"
+              required
+            />
+          </div>
+          <div>
+            <label for="name">Enter Pin</label>
+            <input
+              type="text"
+              name="pin"
+              id="pin"
+              placeholder="4 - Characters"
+              pattern=".{4,4}"
+              title="No less and no more than 4 Characters."
+              required
+            />
+          </div>
+          <div>
+            <input type="submit" value="Log-in" />
+          </div>
+        </form>
+      </section>
     </main>
   </body>
 </html>
