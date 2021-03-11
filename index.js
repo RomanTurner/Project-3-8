@@ -1,6 +1,9 @@
 let ronUrl = "https://ron-swanson-quotes.herokuapp.com/v2/quotes";
 let kanyeUrl = "https://api.kanye.rest/";
 let trumpUrl = "https://api.whatdoestrumpthink.com/api/v1/quotes/random/";
+const userUrl = "http://localhost:3000/users";
+let usersList = [];
+let userID = 0;
 let urlArray = [ronUrl, kanyeUrl, trumpUrl];
 let currentQuote = 0;
 let scoreCounter = 0;
@@ -137,3 +140,78 @@ function nextQuestion(nextQ) {
   getQuote();
   clearInterval(nextQ);
 }
+
+//grab form
+const form = document.querySelector(".form");
+//add listener with validation callback
+form.addEventListener("submit", (e) => createUser(e));
+
+//collects db to search through
+function getUsers() {
+  fetch(userUrl)
+    .then((res) => res.json())
+    .then((users) => {
+      usersList = [...users];
+      console.log(usersList);
+    })
+    .catch((error) => console.error("ERROR:", error));
+}
+
+function radioBtn(e) {
+  e.preventDefault();
+  //if radioBtn === newUser{ createUser(e)} else {validateUsers(e)}
+}
+
+//takes form input and checks database
+function validateUsers(e) {
+  let username = e.target.name.value;
+  let pin = e.target.pin.value;
+  console.log(username, pin);
+  let x = usersList.find((user) => user.username === username);
+  if (x != undefined) {
+    x.pin === pin ? (userID = x.id) : alert("incorrect password");
+  } else {
+    console.log("at else");
+    alert("invalid input, try again");
+  }
+}
+
+function createUser(e) {
+  e.preventDefault();
+  let username = e.target.name.value;
+  let pin = e.target.pin.value;
+  console.log(username, pin);
+  //check if user name is unique
+  let x = usersList.find((user) => user.username === username);
+  if (x === undefined) {
+    postUser(username, pin);
+  } else {
+    console.log("at else");
+    alert("Username taken, Try again.");
+  }
+}
+
+ //POST new user if unique
+function postUser(username, pin) {
+  newUser = {
+    username: username,
+    pin: pin,
+    highScore: 0,
+  };
+  configObj = {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(newUser),
+  };
+  fetch(userUrl, configObj)
+    .then((response) => response.json())
+    .then((user) => {
+      userID = user.id;
+      console.log(user);
+    })
+    .catch((error) => console.error("ERROR: ", error));
+}
+
+getUsers();
