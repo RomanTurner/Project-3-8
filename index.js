@@ -1,3 +1,14 @@
+displaySignIn();
+function displaySignIn() {
+  document.getElementById("overlay").style.display = "flex";
+}
+
+function exitSignIn() {
+  document.getElementById("overlay").style.display = "none";
+}
+
+
+function playGame(){
 let ronUrl = "https://ron-swanson-quotes.herokuapp.com/v2/quotes";
 let kanyeUrl = "https://api.kanye.rest/";
 let trumpUrl = "https://api.whatdoestrumpthink.com/api/v1/quotes/random/";
@@ -56,8 +67,10 @@ function renderQuote(data, i) {
 }
 
 function setTimer(){
+  
   let timerText = document.querySelector('.seconds')
-  let count = 21;
+  timerText.style.color = "white"
+  let count = 11;
   counter = setInterval(timer, 1000)
   timer()
   function timer(){
@@ -87,6 +100,7 @@ function displayLoss(){
   button.addEventListener('click', () => {
     getQuote();
   })
+  
   
 }
 
@@ -140,3 +154,6 @@ function nextQuestion(nextQ) {
   getQuote();
   clearInterval(nextQ);
 }
+}
+
+playGame();

@@ -142,11 +142,56 @@ h3 {
 }
 
 .button {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
   background-color: #000000;
   color: #FFFFFF;
-  float: right;
   padding: 10px;
   border-radius: 10px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
+  
+}
+
+#overlay {
+  justify-content: center; 
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  /* Sit on top of the page content */
+  display: none;
+  /* Hidden by default */
+  width: 100%;
+  /* Full width (cover the whole page) */
+  height: 100%;
+  /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  /* Black background with opacity */
+  z-index: 2;
+  /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer;
+  /* Add a pointer on hover */
+
+}
+
+
+#login {
+  display: flex;
+  border: groove;
+  border-radius: 5rem;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: #ff914d;
+  height: 400px;
+  width: 200px;
+  gap: 8px;
+  color: white;
 }
