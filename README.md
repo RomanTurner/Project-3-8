@@ -129,9 +129,41 @@ Our *"PATCH"* updates the server and initates a new *"GET"* which inturn display
 
 ```
 
-### Favorite Sections of Code
+# Favorite Sections of Code
 
-I really enjoyed making choices trees. In validation, and in selecting a contestant. 
+Besides all the fun with CSS and learning how to beautify a markdown page, here is a section of code we had fun writing. 
+
+
+Creating an array with the url APIs and generating a random *"GET"*.
+
+```javascript
+let ronUrl = "https://ron-swanson-quotes.herokuapp.com/v2/quotes";
+  let kanyeUrl = "https://api.kanye.rest/";
+  let trumpUrl = "https://api.whatdoestrumpthink.com/api/v1/quotes/random/";
+
+  //*GENERATE A RANDOM NUMBER FROM 0 TO 2
+    //*(RON=0), (KANYE=1), (TRUMP=2)
+    clearInterval(counter);
+    contestantArr.forEach((contestant) => {
+      contestant.classList.remove("wrong");
+      contestant.classList.remove("correct");
+    });
+    let i = Math.floor(Math.random() * 3);
+    //*FETCHES QUOTE BASED OFF URL ARRAY INDEX
+    fetch(urlArray[i])
+      .then((response) => response.json())
+      .then((data) => {
+        currentQuote = i;
+        renderQuote(data, i);
+      });
+  }
+
+
+```
+---
+We really enjoyed making choices trees. In validation, and in selecting a contestant. 
+
+Using the interval to transition the *"GET"* and reloading of the quote. 
 
 ```javascript
  function answer(e) {
@@ -163,13 +195,56 @@ I really enjoyed making choices trees. In validation, and in selecting a contest
   }
 
 ```
+We had a lot of fun creating the leaderboard, having it asyncronously updating while the user continues to play through the round. 
 
-Using the interval to transition the *"GET"* and reloading of the quote. 
+Using a ***"GET"*** we collect the array of user object, then we sort them with the built in array method **.sort()** sorting highest to lowest based on the **highScore** value each user has. Passing the sorted array into a display function that iterates over the first *five* users who will have the highest scores. ***"PATCH"***-ing and ***"GET"***-ing as the scores change. 
+
+```javascript
+
+  //*update currentUser's highscore
+  function patchScore() {
+    let updateUser = {
+      highScore: scoreCounter,
+    };
+    let configObj = {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(updateUser),
+    };
+
+    fetch(userUrl + "/" + currentUser.id, configObj)
+      .then((res) => res.json())
+      .then((data) => getUsers())
+      .catch((error) => console.error("ERROR: ", error));
+  }
+
+  function sortUsers(users) {
+    sortedUsers = users.sort((a, b) => b.highScore - a.highScore);
+    console.log(sortedUsers);
+  }
+
+  function displayLeaderBoard() {
+    let ul = document.querySelector("#top-scores");
+    darlingCide(ul);
+    for (let i = 0; i < 5; i++) {
+      let li = document.createElement("li");
+      li.textContent = `${sortedUsers[i].username} - ${sortedUsers[i].highScore}`;
+      appender(ul, li);
+    }
+  }
+
+```
+
 
 Trying to keep sections attuned to Functional JS practices. 
 
+
+---
 #### Thanks For Stopping By
 
+We Appriciate you spending the time looking at this project. 
 ---
 ```javascript
 
