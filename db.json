@@ -69,7 +69,7 @@
     {
       "username": "test",
       "pin": "1111",
-      "highScore": 1,
+      "highScore": 4,
       "id": 14
     },
     {
@@ -131,6 +131,12 @@
       "pin": "1111",
       "highScore": 0,
       "id": 23
+    },
+    {
+      "username": "Yonk",
+      "pin": "4343",
+      "highScore": 7,
+      "id": 24
     }
   ]
 }

@@ -189,7 +189,7 @@ function playGame() {
     clearInterval(counter);
     y.classList.add("correct");
     incrementScore();
-    const nextQ = setInterval(() => nextQuestion(nextQ), 2000);
+    const nextQ = setInterval(() => nextQuestion(nextQ), 500);
   }
 
   //*if wrong, resets the board.
