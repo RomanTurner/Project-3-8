@@ -97,7 +97,6 @@
       "id": 18
     },
     {
-
       "username": "lenk",
       "pin": "2222",
       "highScore": 0,
@@ -108,12 +107,30 @@
       "pin": "6969",
       "highScore": 5,
       "id": 20
-
+    },
+    {
       "username": "evanahouse",
       "pin": "1234",
       "highScore": 23,
       "id": 19
-
+    },
+    {
+      "username": "evanhouse",
+      "pin": "1234",
+      "highScore": 1,
+      "id": 21
+    },
+    {
+      "username": "new user",
+      "pin": "1111",
+      "highScore": 0,
+      "id": 22
+    },
+    {
+      "username": "newuser",
+      "pin": "1111",
+      "highScore": 0,
+      "id": 23
     }
   ]
 }
