@@ -140,8 +140,8 @@ function playGame() {
     darlingCide(ol);
     for (let i = 0; i < 5; i++) {
       let li = document.createElement("li");
-      li.textContent = `${sortedUsers[i].username} : ${sortedUsers[i].highScore}`;
-      appender(ol, li);
+      li.textContent = `${sortedUsers[i].username} - ${sortedUsers[i].highScore}`;
+      appender(ul, li);
     }
   }
 

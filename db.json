@@ -97,10 +97,23 @@
       "id": 18
     },
     {
+
+      "username": "lenk",
+      "pin": "2222",
+      "highScore": 0,
+      "id": 19
+    },
+    {
+      "username": "Roman",
+      "pin": "6969",
+      "highScore": 4,
+      "id": 20
+
       "username": "evanahouse",
       "pin": "1234",
       "highScore": 23,
       "id": 19
+
     }
   ]
 }

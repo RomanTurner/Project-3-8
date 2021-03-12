@@ -210,7 +210,7 @@ h3 {
     font-size: 20px;
   }
 
-  .names {
+  .names, .leaderboard {
     display: none;
   }
 
@@ -237,6 +237,19 @@ h3 {
   }
 }
 .leaderboard {
+
+  margin-top: 2rem;
+  margin-left: 40%;
+  margin-right: 40%;
+  font-family: "RocknRoll One", sans-serif;
+  text-align: center;
+  border: 2px solid black;
+}
+#top-scores {
+  padding-left: 7px;
+  list-style-type: none;
+  text-transform: uppercase;
+
   display: flex;
   flex-direction: column;
   margin-top: 25%;
@@ -272,5 +285,6 @@ h3 {
 }
 #top-scores li:nth-child(5){
   color: black;
+
 }
  
