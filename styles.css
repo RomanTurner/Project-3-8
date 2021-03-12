@@ -78,8 +78,6 @@ section {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-
-  
 }
 
 .ron,
@@ -122,10 +120,10 @@ section {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  
 }
 
 h3 {
+  padding: 2px;
   border: 2px solid black;
 }
 
@@ -161,16 +159,15 @@ h3 {
   flex-direction: row;
   justify-content: center;
   background-color: #000000;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 10px;
   border-radius: 10px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
-  
 }
 
 #overlay {
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
   text-align: center;
   position: fixed;
@@ -191,9 +188,7 @@ h3 {
   /* Specify a stack order in case you're using a different order for other elements */
   cursor: pointer;
   /* Add a pointer on hover */
-
 }
-
 
 #login {
   display: flex;
@@ -219,11 +214,9 @@ h3 {
     display: none;
   }
 
-
   .ron,
   .kanye,
   .trump {
-  
     display: inline-block;
     position: relative;
     width: 150px;
@@ -238,4 +231,12 @@ h3 {
     margin: 10px;
     padding: 10px;
   }
+}
+.leaderboard {
+  margin-top: 2rem;
+  margin-left: 25%;
+  margin-right: 25%;
+  font-family: "RocknRoll One", sans-serif;
+  border: 2px solid black;
+  text-align: center;
 }
