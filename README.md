@@ -16,6 +16,7 @@ A surprising whirlwind of words. Who Said It? puts your social acuity on display
     1. [Donald Trump](#trump)
 2. [What We Use](#apis)
 3. [Features](#features)
+4. [Favorites](#favorites)
 
 ## Contestants <a name="contestants"></a>
 
@@ -129,7 +130,7 @@ Our *"PATCH"* updates the server and initates a new *"GET"* which inturn display
 
 ```
 
-# Favorite Sections of Code
+# Favorite Sections of Code <a name="contestants"></a>
 
 Besides all the fun with CSS and learning how to beautify a markdown page, here is a section of code we had fun writing. 
 
@@ -249,7 +250,8 @@ We Appriciate you spending the time looking at this project.
 ```javascript
 
 if("You would like to Connect"){
- let email = "rn.turner@live.com"
+ let email = ["rn.turner@live.com",
+ "evanahouse@gmail.com"]
 }else{
     let adieu = "Thanks for stopping by."
 }
