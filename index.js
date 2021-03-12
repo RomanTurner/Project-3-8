@@ -1,11 +1,11 @@
-displaySignIn();
-function displaySignIn() {
-  document.getElementById("overlay").style.display = "flex";
-}
+// displaySignIn();
+// function displaySignIn() {
+//   document.getElementById("overlay").style.display = "flex";
+// }
 
-function exitSignIn() {
-  document.getElementById("overlay").style.display = "none";
-}
+// function exitSignIn() {
+//   document.getElementById("overlay").style.display = "none";
+// }
 
 
 function playGame(){
