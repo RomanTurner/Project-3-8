@@ -19,13 +19,13 @@
       <form id="login">
         <h2>Validate User</h2>
         <label for="existingUser">Existing User:</label>
-        <input type="radio" id="existingUser" name="existingUser" value="existingUser" required>
+        <input type="radio" id="existingUser" name="radio" value="existingUser" required>
         <label for="createUsername">Create User:</label>
-        <input type="radio" id="createUsername" name="existingUser" value="createUsername">
+        <input type="radio" id="createUsername" name="radio" value="createUsername">
         <label for="userName">Username:</label>
-        <input type="text" id="userName" name="userName" placeholder="Enter Username..." required>
+        <input type="text" id="name" name="name" placeholder="Enter Username..." required>
         <label for="PIN">PIN(4 Char. Long)</label>
-        <input type="text" id="PIN" name="PIN" placeholder="****" pattern=".{4,4}" title="Only Four Characters" required>
+        <input type="text" id="pin" name="pin" placeholder="****" pattern=".{4,4}" title="Only Four Characters" required>
         <input type="submit">
       </form>
   </div>
@@ -59,7 +59,7 @@
 
       <!--Quote Container-->
       <section class="main-box">
-  <p class="quote"></p>
+        <p class="quote"></p>
       </section>
       <!--End Quote Container-->
       <section class="contestant">
@@ -97,6 +97,12 @@
       </div>
       <!--Contestant Container-->
       <!--End Contestant Container-->
+      <!--Start of LeaderBoard-->
+      <section class="leaderboard">
+        <h1>LEADERBOARD</h1>
+        <ul id="top-scores"></ul>
+      </section>
+      <!--End of LeaderBoard-->
     </main>
   </body>
 </html>

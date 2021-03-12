@@ -1,0 +1,100 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "Sebastian",
+      "pin": "1333",
+      "highScore": 2
+    },
+    {
+      "id": 2,
+      "username": "Steve",
+      "pin": "1324",
+      "highScore": 1
+    },
+    {
+      "id": 3,
+      "username": "Ann",
+      "pin": "1235",
+      "highScore": 5
+    },
+    {
+      "username": "Ronald Regan",
+      "pin": "1222",
+      "id": 4,
+      "highScore": 0
+    },
+    {
+      "username": "Aven Hoose",
+      "pin": "1222",
+      "highScore": 0,
+      "id": 5
+    },
+    {
+      "username": "qerqwer",
+      "pin": "qwee",
+      "highScore": 0,
+      "id": 6
+    },
+    {
+      "username": "Dwayne Johnson",
+      "pin": "6665",
+      "highScore": 0,
+      "id": 7
+    },
+    {
+      "username": "Flerb Fergusson",
+      "pin": "4444",
+      "highScore": 0,
+      "id": 10
+    },
+    {
+      "username": "Murky Water",
+      "pin": "1111",
+      "highScore": 0,
+      "id": 11
+    },
+    {
+      "username": "Skunk",
+      "pin": "1234",
+      "highScore": 0,
+      "id": 12
+    },
+    {
+      "username": "Menk",
+      "pin": "1111",
+      "highScore": 0,
+      "id": 13
+    },
+    {
+      "username": "test",
+      "pin": "1111",
+      "highScore": 1,
+      "id": 14
+    },
+    {
+      "username": "JJ",
+      "pin": "8888",
+      "highScore": 15,
+      "id": 15
+    },
+    {
+      "username": "Slemp",
+      "pin": "1234",
+      "highScore": 1,
+      "id": 16
+    },
+    {
+      "username": "Munk",
+      "pin": "1111",
+      "highScore": 2,
+      "id": 17
+    },
+    {
+      "username": "skud",
+      "pin": "1111",
+      "highScore": 3,
+      "id": 18
+    }
+  ]
+}
