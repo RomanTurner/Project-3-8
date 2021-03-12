@@ -70,16 +70,23 @@ section {
 }
 /* Contestant*/
 .contestant {
-  text-align: center;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  
 }
 
 .ron,
 .kanye,
 .trump {
-  left: 50%;
-  transform: translateX(-50%);
+  /* left: 50%;
+  transform: translateX(-50%); */
   display: inline-block;
   position: relative;
   width: 200px;
@@ -106,9 +113,16 @@ section {
 }
 .names {
   text-align: center;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 10px;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
 }
 
 h3 {
@@ -194,4 +208,34 @@ h3 {
   width: 200px;
   gap: 8px;
   color: white;
+}
+
+@media screen and (max-width: 992px) {
+  .title {
+    font-size: 20px;
+  }
+
+  .names {
+    display: none;
+  }
+
+
+  .ron,
+  .kanye,
+  .trump {
+  
+    display: inline-block;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 4px solid black;
+  }
+
+  .quote {
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+  }
 }
