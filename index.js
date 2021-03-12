@@ -136,8 +136,8 @@ function playGame() {
   }
 
   function displayLeaderBoard() {
-    let ul = document.querySelector("#top-scores");
-    darlingCide(ul);
+    let ol = document.querySelector("#top-scores");
+    darlingCide(ol);
     for (let i = 0; i < 5; i++) {
       let li = document.createElement("li");
       li.textContent = `${sortedUsers[i].username} - ${sortedUsers[i].highScore}`;
