@@ -101,6 +101,12 @@
       "pin": "2222",
       "highScore": 0,
       "id": 19
+    },
+    {
+      "username": "Roman",
+      "pin": "6969",
+      "highScore": 4,
+      "id": 20
     }
   ]
 }
