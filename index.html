@@ -19,13 +19,13 @@
       <form id="login">
         <h2>Validate User</h2>
         <label for="existingUser">Existing User:</label>
-        <input type="radio" id="existingUser" name="existingUser" value="existingUser" required>
+        <input type="radio" id="existingUser" name="radio" value="existingUser" required>
         <label for="createUsername">Create User:</label>
-        <input type="radio" id="createUsername" name="existingUser" value="createUsername">
+        <input type="radio" id="createUsername" name="radio" value="createUsername">
         <label for="userName">Username:</label>
-        <input type="text" id="userName" name="userName" placeholder="Enter Username..." required>
+        <input type="text" id="name" name="name" placeholder="Enter Username..." required>
         <label for="PIN">PIN(4 Char. Long)</label>
-        <input type="text" id="PIN" name="PIN" placeholder="****" pattern=".{4,4}" title="Only Four Characters" required>
+        <input type="text" id="pin" name="pin" placeholder="****" pattern=".{4,4}" title="Only Four Characters" required>
         <input type="submit">
       </form>
   </div>
@@ -97,36 +97,6 @@
       </div>
       <!--Contestant Container-->
       <!--End Contestant Container-->
-      <section>
-        <form action="" class="form">
-          <div>
-            <label for="name">Enter Username</label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              title="invalid input"
-              placeholder="enter username"
-              required
-            />
-          </div>
-          <div>
-            <label for="name">Enter Pin</label>
-            <input
-              type="text"
-              name="pin"
-              id="pin"
-              placeholder="4 - Characters"
-              pattern=".{4,4}"
-              title="No less and no more than 4 Characters."
-              required
-            />
-          </div>
-          <div>
-            <input type="submit" value="Log-in" />
-          </div>
-        </form>
-      </section>
     </main>
   </body>
 </html>
