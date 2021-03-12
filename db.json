@@ -95,6 +95,12 @@
       "pin": "1111",
       "highScore": 3,
       "id": 18
+    },
+    {
+      "username": "evanahouse",
+      "pin": "1234",
+      "highScore": 23,
+      "id": 19
     }
   ]
 }

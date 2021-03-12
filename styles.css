@@ -231,12 +231,46 @@ h3 {
     margin: 10px;
     padding: 10px;
   }
+
+  .leaderboard{
+    font-size: 12px;
+  }
 }
 .leaderboard {
-  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 25%;
   margin-left: 25%;
   margin-right: 25%;
   font-family: "RocknRoll One", sans-serif;
-  border: 2px solid black;
+  border: groove;
   text-align: center;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 145, 77, 1) 35%, rgba(255, 255, 255, 1) 100%);
 }
+
+#top-scores{
+  
+  display: inline;
+  float: left;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#top-scores li:nth-child(1){
+  color: black;
+}
+#top-scores li:nth-child(2){
+  color:#893101;
+}
+#top-scores li:nth-child(3){
+  color:black;
+}
+#top-scores li:nth-child(4){
+  color: #893101;
+}
+#top-scores li:nth-child(5){
+  color: black;
+}
+ 
