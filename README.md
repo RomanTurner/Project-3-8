@@ -2,18 +2,18 @@
 
 ![Countdown](/imgs/who-said-it.png)
 
-A surprising whirlwind of words. Who Said It? puts your social acuity on display as you try to decipher who said the displayed quote. 
+A surprising whirlwind of words. Who Said It? puts your social acuity on display as you try to decipher who said the displayed quote.
 
 ![](/imgs/main.gif)
 
->The game we didn't need but the game that we deserved. 
-
+> The game we didn't need but the game that we deserved.
 
 # Table of contents
+
 1. [Contestants](#contestants)
-    1. [Ron Swanson](#ron)
-    1. [Kanye West](#kanye)
-    1. [Donald Trump](#trump)
+   1. [Ron Swanson](#ron)
+   1. [Kanye West](#kanye)
+   1. [Donald Trump](#trump)
 2. [What We Use](#apis)
 3. [Features](#features)
 4. [Favorites](#favorites)
@@ -22,38 +22,38 @@ A surprising whirlwind of words. Who Said It? puts your social acuity on display
 
 ![Countdown](/imgs/contestants.png)
 
-We feature the APIs of three dubious and famous characters, one fictional, one stranger than fiction, one delusional. (*We will leave you to decide who is who in that list*)
+We feature the APIs of three dubious and famous characters, one fictional, one stranger than fiction, one delusional. (_We will leave you to decide who is who in that list_)
 
-* **Ronald Ulysses Swanson<a name="ron"></a>**
+- **Ronald Ulysses Swanson<a name="ron"></a>**
 
 ![](/imgs/ron.jpg)
 
->Ron, who has an extremely deadpan and stereotypical masculine .personality, actively works to make city hall less effective and despises interacting with the public. He loves meat, woodworking, hunting, whisky, breakfast foods, nautical literature, and sex. He hates and fears his ex-wives, both named Tammy, one of whom is played by Offerman's real-life wife, Megan Mullally. Ron claims not to be interested in the personal lives of those around him.
->[- Ron Swanson Wikipedia](https://en.wikipedia.org/wiki/Ron_Swanson)
+> Ron, who has an extremely deadpan and stereotypical masculine .personality, actively works to make city hall less effective and despises interacting with the public. He loves meat, woodworking, hunting, whisky, breakfast foods, nautical literature, and sex. He hates and fears his ex-wives, both named Tammy, one of whom is played by Offerman's real-life wife, Megan Mullally. Ron claims not to be interested in the personal lives of those around him.
+> [- Ron Swanson Wikipedia](https://en.wikipedia.org/wiki/Ron_Swanson)
 
 ---
-* **Kanye Omari West<a name="kanye"></a>**
+
+- **Kanye Omari West<a name="kanye"></a>**
 
 ![](/imgs/kanye.jpeg)
 
->West's outspoken views and life outside of music have received significant media attention. He has been a frequent source of controversy for his conduct at award shows, on social media, and in other public settings, as well as for his comments on the music and fashion industries, U.S. politics, and race.
->[- Kanye West Wikipedia](https://en.wikipedia.org/wiki/Kanye_West)
+> West's outspoken views and life outside of music have received significant media attention. He has been a frequent source of controversy for his conduct at award shows, on social media, and in other public settings, as well as for his comments on the music and fashion industries, U.S. politics, and race.
+> [- Kanye West Wikipedia](https://en.wikipedia.org/wiki/Kanye_West)
 
 ---
-* **Donald J. Trump<a name="trump"></a>**
+
+- **Donald J. Trump<a name="trump"></a>**
 
 ![](/imgs/drump.jpeg)
 
->Born and raised in Queens, New York City, Trump attended Fordham University for two years and received a bachelor's degree in economics from the Wharton School of the University of Pennsylvania. He became the president of his father Fred Trump's real estate business in 1971, and renamed it to The Trump Organization. Trump expanded the company's operations to building and renovating skyscrapers, hotels, casinos, and golf courses. He later started various side ventures, mostly by licensing his name. Trump and his businesses have been involved in more than 4,000 state and federal legal actions, including six bankruptcies. 
->[- Donald Trump Wikipedia](https://en.wikipedia.org/wiki/Donald_Trump)
+> Born and raised in Queens, New York City, Trump attended Fordham University for two years and received a bachelor's degree in economics from the Wharton School of the University of Pennsylvania. He became the president of his father Fred Trump's real estate business in 1971, and renamed it to The Trump Organization. Trump expanded the company's operations to building and renovating skyscrapers, hotels, casinos, and golf courses. He later started various side ventures, mostly by licensing his name. Trump and his businesses have been involved in more than 4,000 state and federal legal actions, including six bankruptcies.
+> [- Donald Trump Wikipedia](https://en.wikipedia.org/wiki/Donald_Trump)
 
-
-With the battle lines drawn lets find out who really said it..
----
+## With the battle lines drawn lets find out who really said it..
 
 # What We Use <a name="contestants"></a>
-After searching the web for fun APIs to work with we ran across the **KanyeREST** API and thus *Who Said It?* Was born. 
 
+After searching the web for fun APIs to work with we ran across the **KanyeREST** API and thus _Who Said It?_ Was born.
 
 :boom:
 
@@ -61,16 +61,15 @@ After searching the web for fun APIs to work with we ran across the **KanyeREST*
 
 ![Best Kanye Rest API](/imgs/kanyeRest.png)
 
-What a great resource and the fuel for this idea. When we saw that Donald Trump and Ron Swanson all had quote APIs, we knew what we had to do. 
+What a great resource and the fuel for this idea. When we saw that Donald Trump and Ron Swanson all had quote APIs, we knew what we had to do.
 
 ---
+
 :boom:
 
 [What Does Trump Think?](https://whatdoestrumpthink.com/api-docs/index.html#introduction)
 
 ![What Does Trump Think?](/imgs/what-does-trump-think.png)
-
-
 
 ---
 
@@ -78,64 +77,63 @@ What a great resource and the fuel for this idea. When we saw that Donald Trump 
 
 [Ron Swanson Quote API](https://github.com/jamesseanwright/ron-swanson-quotes)
 
-**No Image Availible** 
+**No Image Availible**
 
 ---
 
-
 # Features <a name="features"></a>
 
-What is a simple idea presented a lot of fun for our first project. Working with json servers, creating persistence for users and being able to validate(to an extent) for unique users was a fun learning point. Here are some of our fave features and code blocks. 
+What is a simple idea presented a lot of fun for our first project. Working with json servers, creating persistence for users and being able to validate(to an extent) for unique users was a fun learning point. Here are some of our fave features and code blocks.
 
-## We are on the clock! 
+## We are on the clock!
+
 ![Countdown](/imgs/countdown-timer.gif)
 ![Countdown](/imgs/countdown-timer.gif)
 ![Countdown](/imgs/countdown-timer.gif)
 ![Countdown](/imgs/countdown-timer.gif)
 
-Setting an interval for a timer and changing the class on a conditional. 
+Setting an interval for a timer and changing the class on a conditional.
 
 ## We have Unique Users
-We have basic user sign in and validation. 
+
+We have basic user sign in and validation.
 ![Sign-in](/imgs/sign-in.png)
 
 ```javascript
 let x = sortedUsers.find((user) => user.username === username);
-    if (x != undefined) {
-      x.pin === pin ? exitSignIn(x) : alert("incorrect password");
-    } else {
-      console.log("at else Existing User");
-      alert("invalid input, try again");
-    }
+if (x != undefined) {
+  x.pin === pin ? exitSignIn(x) : alert("incorrect password");
+} else {
+  console.log("at else Existing User");
+  alert("invalid input, try again");
+}
 ```
 
-## We have persistence! 
+## We have persistence!
 
-We have a database with users that hold a unique PIN and the user's best score. The leaderboard is updated asyncronously as a user plays through rounds. 
+We have a database with users that hold a unique PIN and the user's best score. The leaderboard is updated asyncronously as a user plays through rounds.
 
 ![Countdown](/imgs/leaderboard.png)
 
+Our _"GET"_ from the server return an array of user-objects. They are immediately sorted by highscore and the top five are displayed.
 
-Our *"GET"* from the server return an array of user-objects. They are immediately sorted by highscore and the top five are displayed. 
-
-Our *"PATCH"* updates the server and initates a new *"GET"* which inturn displays the leaderboard. 
+Our _"PATCH"_ updates the server and initates a new _"GET"_ which inturn displays the leaderboard.
 
 **A Simple For Loop Constructor**
-```javascript
-  for (let i = 0; i < 5; i++) {
-      let li = document.createElement("li");
-      li.textContent = `${sortedUsers[i].username} - ${sortedUsers[i].highScore}`;
-      appender(ul, li);
-    }
 
+```javascript
+for (let i = 0; i < 5; i++) {
+  let li = document.createElement("li");
+  li.textContent = `${sortedUsers[i].username} - ${sortedUsers[i].highScore}`;
+  appender(ul, li);
+}
 ```
 
 # Favorite Sections of Code <a name="contestants"></a>
 
-Besides all the fun with CSS and learning how to beautify a markdown page, here is a section of code we had fun writing. 
+Besides all the fun with CSS and learning how to beautify a markdown page, here is a section of code we had fun writing.
 
-
-Creating an array with the url APIs and generating a random *"GET"*.
+Creating an array with the url APIs and generating a random _"GET"_.
 
 ```javascript
 let ronUrl = "https://ron-swanson-quotes.herokuapp.com/v2/quotes";
@@ -161,99 +159,131 @@ let ronUrl = "https://ron-swanson-quotes.herokuapp.com/v2/quotes";
 
 
 ```
----
-We really enjoyed making choices trees. In validation, and in selecting a contestant. 
-
-Using the interval to transition the *"GET"* and reloading of the quote. 
-
-```javascript
- function answer(e) {
-    clearInterval(counter);
-    let y = e.path[1];
-    let x = parseInt(e.path[1].dataset.num);
-    if (x === currentQuote) {
-      correct(y);
-    } else {
-      wrong(y);
-    }
-  }
-
- //*if correct
-  function correct(y) {
-    clearInterval(counter);
-    y.classList.add("correct");
-    incrementScore();
-    const nextQ = setInterval(() => nextQuestion(nextQ), 2000);
-  }
-
-  //*if wrong, resets the board.
-  function wrong(y) {
-    clearInterval(counter);
-    y.classList.add("wrong");
-    displayLoss();
-    scoreCounter = -1;
-    incrementScore();
-  }
-
-```
-We had a lot of fun creating the leaderboard, having it asyncronously updating while the user continues to play through the round. 
-
-Using a ***"GET"*** we collect the array of user object, then we sort them with the built in array method **.sort()** sorting highest to lowest based on the **highScore** value each user has. Passing the sorted array into a display function that iterates over the first *five* users who will have the highest scores. ***"PATCH"***-ing and ***"GET"***-ing as the scores change. 
-
-```javascript
-
-  //*update currentUser's highscore
-  function patchScore() {
-    let updateUser = {
-      highScore: scoreCounter,
-    };
-    let configObj = {
-      method: "PATCH",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(updateUser),
-    };
-
-    fetch(userUrl + "/" + currentUser.id, configObj)
-      .then((res) => res.json())
-      .then((data) => getUsers())
-      .catch((error) => console.error("ERROR: ", error));
-  }
-
-  function sortUsers(users) {
-    sortedUsers = users.sort((a, b) => b.highScore - a.highScore);
-    console.log(sortedUsers);
-  }
-
-  function displayLeaderBoard() {
-    let ul = document.querySelector("#top-scores");
-    darlingCide(ul);
-    for (let i = 0; i < 5; i++) {
-      let li = document.createElement("li");
-      li.textContent = `${sortedUsers[i].username} - ${sortedUsers[i].highScore}`;
-      appender(ul, li);
-    }
-  }
-
-```
-
-
-Trying to keep sections attuned to Functional JS practices. 
-
 
 ---
-#### Thanks For Stopping By
 
-We Appriciate you spending the time looking at this project. 
----
+We really enjoyed making choices trees. In validation, and in selecting a contestant.
+
+Using the interval to transition the _"GET"_ and reloading of the quote.
+
 ```javascript
-
-if("You would like to Connect"){
- let email = ["rn.turner@live.com",
- "evanahouse@gmail.com"]
-}else{
-    let adieu = "Thanks for stopping by."
+function answer(e) {
+  clearInterval(counter);
+  let y = e.path[1];
+  let x = parseInt(e.path[1].dataset.num);
+  if (x === currentQuote) {
+    correct(y);
+  } else {
+    wrong(y);
+  }
 }
 
+//*if correct
+function correct(y) {
+  clearInterval(counter);
+  y.classList.add("correct");
+  incrementScore();
+  const nextQ = setInterval(() => nextQuestion(nextQ), 2000);
+}
+
+//*if wrong, resets the board.
+function wrong(y) {
+  clearInterval(counter);
+  y.classList.add("wrong");
+  displayLoss();
+  scoreCounter = -1;
+  incrementScore();
+}
+```
+
+We had a lot of fun creating the leaderboard, having it asyncronously updating while the user continues to play through the round.
+
+Using a **_"GET"_** we collect the array of user object, then we sort them with the built in array method **.sort()** sorting highest to lowest based on the **highScore** value each user has. Passing the sorted array into a display function that iterates over the first _five_ users who will have the highest scores. **_"PATCH"_**-ing and **_"GET"_**-ing as the scores change.
+
+```javascript
+//*update currentUser's highscore
+function patchScore() {
+  let updateUser = {
+    highScore: scoreCounter,
+  };
+  let configObj = {
+    method: "PATCH",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(updateUser),
+  };
+
+  fetch(userUrl + "/" + currentUser.id, configObj)
+    .then((res) => res.json())
+    .then((data) => getUsers())
+    .catch((error) => console.error("ERROR: ", error));
+}
+
+function sortUsers(users) {
+  sortedUsers = users.sort((a, b) => b.highScore - a.highScore);
+  console.log(sortedUsers);
+}
+
+function displayLeaderBoard() {
+  let ul = document.querySelector("#top-scores");
+  darlingCide(ul);
+  for (let i = 0; i < 5; i++) {
+    let li = document.createElement("li");
+    li.textContent = `${sortedUsers[i].username} - ${sortedUsers[i].highScore}`;
+    appender(ul, li);
+  }
+}
+```
+
+Trying to keep sections attuned to Functional JS practices.
+
+---
+
+Lastly, we wanted to make sure our application was mobile-friendly. To achieve this functionaility, we implemented media queries in the CSS file.
+
+```css
+@media screen and (max-width: 992px) {
+  .title {
+    font-size: 20px;
+  }
+  .names {
+    display: none;
+  }
+  .ron,
+  .kanye,
+  .trump {
+    display: inline-block;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 4px solid black;
+  }
+
+  .quote {
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .leaderboard {
+    font-size: 12px;
+  }
+}
+```
+
+As you can see, we set a breaking point at a width of 992px. From here we shrunk the image sizes, font-sizes, hid the names display, and decreased the quote margin. Now our users will be able to play from their mobile devices. Fun!
+
+#### Thanks For Stopping By
+
+## We Appriciate you spending the time looking at this project.
+
+```javascript
+if ("You would like to Connect") {
+  let email = ["rn.turner@live.com", "evanahouse@gmail.com"];
+} else {
+  let adieu = "Thanks for stopping by.";
+}
 ```
